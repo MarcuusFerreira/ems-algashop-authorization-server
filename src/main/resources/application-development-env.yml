@@ -6,17 +6,17 @@ spring:
           algashop-test-client:
             registration:
               client-id: algashop-test-client
-              authorization-grant-type:
+              authorization-grant-types:
                 - client_credentials
               client-authentication-methods:
                 - client_secret_basic
-              client-secret: "{noop}secret123"
+              client-secret: "{noop}testing123"
               scopes:
                 - products:read
                 - products:write
           algashop-ordering-service-client:
             registration:
-              client-id: algashop-ordering-service
+              client-id: algashop-ordering-service-client
               authorization-grant-types:
                 - client_credentials
               client-authentication-methods:
